@@ -21,6 +21,7 @@ body {
 ul {
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
 }
 nav {
   position: fixed;
@@ -61,13 +62,15 @@ header {
 }
 .title img {
     padding-top: 150px;
-    width: 500px;
+    width: 400px;
 }
 header h2 {
+    margin-top: 0;
     font-family:inherit;
     font-size: 39px;
     font-weight: bold;
-    color: #fff;
+    color: #030327;
+    text-transform: uppercase;
 }
 header p {
     font: 18px/1.9em 'librebaskerville-regular', serif;

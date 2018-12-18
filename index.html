@@ -11,12 +11,24 @@
            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-                <script src="https://code.jquery.com/jquery-3.3.1.js"
+            <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-            <script src="main.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+    
+    
+</script>
 <body>
             <nav id="menu">
                <ul>
@@ -27,19 +39,22 @@
                   <a href="#contact">Контакти</a>
                   </li>
                   <li>
-                  <a href="#contact">Галерея</a>
+                  <a href="#galety">Галерея</a>
                   </li>
                   <li>
-                  <a href="#about">Афіша</a>
+                  <a href="#poster">Афіша</a>
                   </li>
                   <li>
-                  <a href="#acsess">Нагороди</a>
+                  <a href="#awards">Нагороди</a>
                   </li>
                   <li>
-                  <a href="#woman">Колективи</a>
+                  <a href="#team">Команда</a>
                   </li>
                   <li>
-                  <a href="#man">Історія</a>
+                  <a href="#collective">Колективи</a>
+                  </li>
+                  <li>
+                  <a href="#history">Історія</a>
                   </li>
                   <li>
                   <a href="#head">Головна</a>
@@ -56,11 +71,37 @@
                </p>
                </div>
            <ul class="social">
-              
-               <li><a href="https://www.facebook.com/profile.php?id=100028460255930" target="_blank"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://www.instagram.com/esscada_exclusive/" target="_blank"><i class="fa fa-instagram" ></i></a></li>
+               <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+               <li><a href="https://www.instagram.com/cultural_center_knlu/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="https://m.facebook.com/groups/1527234154023152" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
            </ul>
            </div>
-           </header>
+    </header>
+        <section id="history">
+            <div class="container">
+               <h2>Історія</h2>
+                <div class="history_foto">
+                    <img src="img/history_logo2.png">
+                </div>
+                <div class="history_text">
+                    <p>Центр культури і мистецтв Київського національного лінгвістичного університету
+                    є складовою частиною державної культурно–освітньої системи України.</p>
+                    <p>Це широко доступний, культурно–освітній структурний підрозділ Університету,
+                    який надає студентській молоді можливості всебічного розвитку і
+                    самовизначення у сфері вільного часу, сприяє організації змістовного
+                    проведення дозвілля і відпочинку. Це місце проведення концертів та конкурсів.
+                    У Центрі культури і мистецтв Університету працюють такі творчі колективи та
+                    студії: хореографічна, вокальна,театральна та оркестр.</p>
+                    <p>Творчі колективи Університету неодноразово виборювали перемоги на
+                    Міжнародних, всеукраїнських, міських та районних фестивалях студентської
+                    творчості. Художні колективи презентували свою творчість на сценах
+                    Національного Палацу «Україна», Національної музичної академії України ім. П.
+                    І. Чайковського, Національного будинку &quot;Український дім&quot;, Державної опери
+                    України, на &quot;Співочому полі&quot; тощо.
+                    Центр культури і мистецтв розташований за адресою місто Київ, вулиця
+                    Предславинська, 6.</p>
+                </div>
+            </div>
+    </section>
     </body>
 </html>

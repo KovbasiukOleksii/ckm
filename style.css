@@ -12,7 +12,7 @@ body {
     width: 80%;
 }
 #menu {
-    background: #030327;
+    background: #031C67;
 }
 #menu img {
     width: 150px;
@@ -82,14 +82,35 @@ header p {
 .social li {
     list-style: none;
     display: inline-block;
+    margin-bottom: 35px;
 }
 .social li a {
     margin-right: 15px;
-    font-size: 30px;
+    font-size: 35px;
     color: #47484B;
     text-decoration: none;
 }
 .social li a:hover {
     color: #FF2A20 ;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+#history {
+    background: #EEEEEF;
+}
+#history h2 {
+    margin-top: 0;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+#history img {
+    width: 200px;
+    float: left;
+}
+#history p {
+    font-family: arial;
+    line-height: 1.5;
+}
+#history p:last-child {
+    padding-bottom: 50px;
 }

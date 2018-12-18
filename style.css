@@ -95,7 +95,7 @@ header p {
     display: inline-block;
     margin-bottom: 35px;
 }
-.social li a {
+.social a {
     margin-right: 15px;
     font-size: 35px;
     color: #47484B;
@@ -152,6 +152,21 @@ header p {
     height: 300px;
     margin-right: 50px;
 }
-.info_adress p:last-child {
-    padding-bottom:  250px;
+.social_contact {
+    margin-top: 155px;
+}
+.social_contact li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+.social_contact a {
+    margin-right: 5px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.social_contact li a:hover {
+    color: #FF2A20 ;
+    transition: 0.5s;
 }

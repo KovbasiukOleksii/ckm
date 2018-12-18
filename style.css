@@ -120,6 +120,9 @@ header p {
 #collective {
     background: #EEEEEF;
 }
+ #collective i {
+    margin-right: 15px;
+}
 .collective_card {
     border-bottom: 2px solid #EEEEEF;   
     display: flex;
@@ -149,6 +152,6 @@ header p {
     height: 300px;
     margin-right: 50px;
 }
-.info_adress p {
+.info_adress p:last-child {
     padding-bottom:  250px;
 }

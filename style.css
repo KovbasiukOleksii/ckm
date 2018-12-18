@@ -130,3 +130,25 @@ header p {
     width: 250px;
     margin-right: 60px;
 }
+#contact {
+    background: #031C67;
+    color: #fff;
+}
+#contact i {
+    margin-right: 10px;
+}
+#contact p {
+    line-height: 0.8;
+}
+#contact .collective_info:first-child {
+    margin-right: 300px;
+}
+.info_adress iframe {
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin-right: 50px;
+}
+.info_adress p {
+    padding-bottom:  250px;
+}

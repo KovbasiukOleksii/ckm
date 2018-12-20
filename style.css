@@ -116,6 +116,7 @@ header p {
 }
 #history p:last-child {
     padding-bottom: 50px;
+    margin-bottom: 0;
 }
 #collective {
     background: #EEEEEF;
@@ -123,8 +124,7 @@ header p {
  #collective i {
     margin-right: 15px;
 }
-.collective_card {
-    border-bottom: 2px solid #EEEEEF;   
+.collective_card {   
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

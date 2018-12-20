@@ -3,7 +3,7 @@
 <meta charset="utf-8">
     <title>ЦКМ </title>
     <head>
-     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!--       
            Bootstrap4
            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -20,7 +20,19 @@
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
             <script src="wow.min.js"></script>
-<script type="text/javascript">
+<script type="text/javascript"> 
+window.onload = function() {
+    var menuStyle = getComputedStyle(menu);
+    openMenu.onclick = function() {
+        if(menuStyle.display == "none") {
+            menu.classList.add('active');
+        } else {
+            menu.classList.remove('active');
+            this.innerHTML = "X";
+        }
+    }
+}
+    
  $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -28,20 +40,26 @@
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-});
+});    
 new WOW().init();
 </script>
 <body>
-            <nav id="menu">
-               <ul>
-                  <li>
-                  <a href="#head"><img src="img/logo.png" class="wow fadeIn" data-wow-duration="2s">
-                  </a></li>
-                  <li>
-                  <a href="#contact">Контакти</a>
+            <nav>
+        <img src="img/logo.png" class="wow fadeIn" data-wow-duration="2s">
+              <div class="openMenu" id="openMenu">Меню</div>
+               <ul id="menu">
+                  
+                 <li>
+                  <a href="#head">Головна</a>
                   </li>
                   <li>
-                  <a href="#galety">Галерея</a>
+                  <a href="#history">Історія</a>
+                  </li>
+                  <li>
+                  <a href="#collective">Колективи</a>
+                  </li>
+                  <li>
+                  <a href="#team">Команда</a>
                   </li>
                   <li>
                   <a href="#poster">Афіша</a>
@@ -50,19 +68,16 @@ new WOW().init();
                   <a href="#awards">Нагороди</a>
                   </li>
                   <li>
-                  <a href="#team">Команда</a>
+                  <a href="#galety">Галерея</a>
                   </li>
                   <li>
-                  <a href="#collective">Колективи</a>
+                  <a href="#contact">Контакти</a>
                   </li>
-                  <li>
-                  <a href="#history">Історія</a>
-                  </li>
-                  <li>
-                  <a href="#head">Головна</a>
-                  </li>
+                
+                  
                </ul>
            </nav>
+
            <header id="head">
            <div class="container">
                <div class="title">
@@ -151,6 +166,11 @@ new WOW().init();
                     <p><b>Байдеріна Анастасія Артурівна</b></p>
                     <p>Режисер постановник</p>
                 </div>
+                <div class="staff_card wow fadeIn" data-wow-duration="1.5s" data-wow-offset="120">
+                    <img src="img/yayaya.png">
+                    <p><b>Ковбасюк Олексій Миколайович</b></p>
+                    <p>Генеральний директор над директорами</p>
+                </div>
             </div>
         </div>
     </section>
@@ -215,11 +235,11 @@ new WOW().init();
 
  
     <section id="contact">
+       <h2>Контакти</h2>
         <div class="container">
-            <h2>Контакти</h2>
-            <div class="collective_card">
+            <div class="collective_card_footer">
+            <div class="collective_info_footer">
             <div class="wow fadeIn" data-wow-duration="2s" data-wow-offset="150">
-            <div class="collective_info">
             <h3>Директор:</h3>
             <p>Шишак Любомир Васильович</p>
             <p><i class="fas fa-phone"></i>+38 (096) 680-69-43</p>
@@ -227,13 +247,13 @@ new WOW().init();
             </div>
             </div>
             
-            <div class="collective_info">
+            <div class="collective_info_footer">
             <div class="wow fadeIn" data-wow-duration="2s" data-wow-offset="150">
             <h3>Заступник директора:</h3>
             <p>Добровольська Ольга Борисівна</p>
             <p><i class="fas fa-phone"></i>+38 (096) 250-31-95</p>
             <p><i class="fas fa-phone"></i>+38 (063) 477-55-64</p>
-            </div>
+           </div>
             </div>
             </div>
             <div class="info_adress">

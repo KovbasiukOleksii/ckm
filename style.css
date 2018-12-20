@@ -6,10 +6,6 @@ body {
     padding: 0;
     background: ;
 }
-p {
-    font-family: arial;
-    line-height: 1.5;
-}
 h2 {
     margin-top: 0;
     padding-top: 60px;
@@ -22,10 +18,8 @@ h2 {
     padding: 0;
     width: 80%;
 }
-#menu {
-    background: #031C67;
-}
-#menu img {
+nav img {
+    float: left;
     width: 150px;
     margin-left: 80px;
 }
@@ -40,32 +34,88 @@ nav {
   left: 0;
   width: 100%;
   height: 60px;
-  background: #1A1819;
+  background: #031C67;
   z-index: 1111;
 }
 nav li {
     display: inline-block;
     list-style: none;
+    margin-top: 15px;
     float: left;
     padding: .5rem 1rem;
 }
-nav li:nth-child(1n+2) {
-    float: right;
-    padding-top: 20px;
+nav li:nth-child(1) {
+    margin-left: 130px;
+}
+@media only screen and (max-width: 1190px) {
+    nav li:nth-child(1) {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    nav li {
+        padding: .5rem .5rem;
+    }
+}
+@media only screen and (max-width: 935px) {
+    nav img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 935px) {
+    nav li:nth-child(1) {
+        margin-left: 100px;;
+    }
 }
 nav li a {
+    display: block;
     font-weight: bold;
     color: #fff;
     font-size: 14px;
     text-decoration: none;
 }
-nav li:nth-child(2){
-    margin-right: 80px;
-}
 nav li a:hover {
     color: #FF2A20;
     text-decoration: none;
 }
+.openMenu {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+    .openMenu {
+        display: block;
+        margin-left: 45%;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    nav ul.active {
+        display: block;
+        background: #000;
+        margin-left: 0 auto;
+        opacity: 0.5;
+    }
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav li:nth-child(1) {
+        display: none;
+        margin-left: 0;
+    }
+}
+
 header {
     background: url(img/banner3.jpg) no-repeat center top / cover;
     width: 100%;
@@ -73,7 +123,8 @@ header {
 }
 .title img {
     padding-top: 150px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 header h1 {
     margin-top: 0;
@@ -127,20 +178,43 @@ header p {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .collective_info p {
+        margin: 4px;
+    }
 }
 #collective img {
     width: 250px;
     margin-right: 60px;
+}
+@media only screen and (max-width: 1000px) {
+    #collective img {
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 735px) {
+    #collective img {
+        width: 150px;
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 590px) {
+    #collective img {
+        margin-top: 20px;
+        width: 100px;
+        margin-right: 15px;
+    }
+}
+.collective_info {
+    width: 100%;
 }
 #team {
     background: url(img/scena_fon_team4.jpg) no-repeat center top / cover;
     color: #fff;
 }
 .flex_container {
-/*
-    margin: 0 auto;
-    width: 80%;
-*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -166,11 +240,18 @@ header p {
     line-height: 1;
     margin: 3px;
 }
-
-
 #contact {
     background: #031C67;
     color: #fff;
+}
+.collective_card_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.collective_info_footer {
+    max-width: 250px;
+    width: 100%;
 }
 #contact i {
     margin-right: 10px;
@@ -178,17 +259,25 @@ header p {
 #contact p {
     line-height: 0.8;
 }
-#contact .collective_info:first-child {
-    margin-right: 300px;
-}
 .info_adress iframe {
     float: left;
     width: 400px;
     height: 300px;
     margin-right: 50px;
 }
+@media only screen and (max-width: 1000px) {
+    .info_adress iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
 .social_contact {
     margin-top: 155px;
+}
+@media only screen and (max-width: 1000px) {
+    .social_contact  {
+        margin-top: 30px;
+    }
 }
 .social_contact li {
     list-style: none;

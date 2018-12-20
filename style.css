@@ -108,6 +108,7 @@ nav li a:hover {
         display: block;
         width: 100%;
         text-align: center;
+        margin: 0;
     }
     nav li:nth-child(1) {
         display: none;

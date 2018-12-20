@@ -86,8 +86,7 @@ nav li a:hover {
 @media only screen and (max-width: 800px) {
     .openMenu {
         display: block;
-        margin-left: 45%;
-        text-align: left;
+        text-align: center;
         text-transform: uppercase;
         font-size: 18px;
         margin-top: 20px;

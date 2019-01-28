@@ -118,6 +118,7 @@ nav li a:hover {
 
 header {
     background: url(img/banner3.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
     width: 100%;
     text-align: center;
 }
@@ -128,7 +129,7 @@ header {
 }
 header h1 {
     margin-top: 0;
-    font-family:inherit;
+    font-family: 'Yeseva One', cursive;
     font-size: 39px;
     font-weight: bold;
     color: #030327;
@@ -160,6 +161,9 @@ header p {
     background: #031C67;
     color: #fff;
 }
+#history h2{
+    font-family: 'Gabriela', serif;
+}
 #history img {
     width: 200px;
     float: left;
@@ -178,7 +182,7 @@ header p {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 100%;
+    width: max-content;
 }
 @media only screen and (max-width: 1000px) {
     .collective_info p {
@@ -211,8 +215,12 @@ header p {
     width: 100%;
 }
 #team {
-    background: url(img/scena_fon_team4.jpg) no-repeat center top / cover;
+    background: url(img/banner3.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
     color: #fff;
+}
+#team h2{
+    font-family: 'Gabriela', serif;
 }
 .flex_container {
     display: flex;
@@ -232,7 +240,7 @@ header p {
     -webkit-box-shadow: 0px 0px 18px 6px rgba(9,12,87,1);
     -moz-box-shadow: 0px 0px 18px 6px rgba(9,12,87,1);
     box-shadow: 0px 0px 18px 6px rgba(9,12,87,1);
-    opacity: 0.9;
+    
 } 
 .staff_card p {
     text-align: center;
@@ -243,6 +251,9 @@ header p {
 #contact {
     background: #031C67;
     color: #fff;
+}
+#collective h2 {
+    font-family: 'Gabriela', serif;
 }
 .collective_card_footer {
     display: flex;
